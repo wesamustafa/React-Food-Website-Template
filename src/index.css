@@ -2,6 +2,7 @@
 :root {
   --primary-color: rgb(168, 45, 73);
   --second-color:#43121d;
+  --third-color:#545454;
   --primary-font:'Open Sans', sans-serif;;
   --second-font: 'Merienda', cursive;
 }

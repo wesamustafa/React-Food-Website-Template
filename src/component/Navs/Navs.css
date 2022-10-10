@@ -13,6 +13,7 @@ nav a{
 }
 nav a:hover{
     color:var(--second-color) !important;
+    font-weight: bold;
     transition: .2s ease-in-out;
 }
 nav img{

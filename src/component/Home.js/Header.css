@@ -19,7 +19,7 @@ header h2{
     font-weight: bold;
 }
 header p{
-    color: #545454;
+    color: var(--third-color);
     margin: 0.938rem 0;
 }
 header button{
