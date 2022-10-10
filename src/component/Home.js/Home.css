@@ -44,9 +44,67 @@
     color: var(--second-color);
     line-height: 3.125rem;
     width: 80%;
+    font-family: var(--second-font);
 }
 .pride p{
     font-size:1rem;
     line-height: 1.75rem;
     color: var(--third-color);
+}
+/* ingredients section */
+.ingredients{
+    margin-top: 3.125rem;
+    max-width: 100%;
+    height: auto;
+    text-align: left;
+    overflow: hidden;
+}
+.ingredients h2{
+    font-size: 2.188rem;
+    font-weight: bold;
+    margin: 0.625rem 0;
+    color: var(--second-color);
+    line-height: 3.125rem;
+    width: 80%;
+    font-family: var(--second-font);
+}
+.ingredients p{
+    font-size:1rem;
+    line-height: 1.75rem;
+    color: var(--third-color);
+}
+.ingredients ul li{
+    list-style-type: square;
+    color: var(--third-color);
+    margin-top: 0.625rem;
+}
+.ingredients img{
+    max-width: 100%;
+}
+/* paralex section*/
+.paralex{
+    background: url("../../assets/paralex.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 1.875rem 0;
+    text-align: center;
+}
+.paralex .row{
+    margin: 3.125rem 0;
+}
+.paralex h2{
+    font-size: 2.188rem;
+    font-weight: bold;
+    margin: 0.625rem 0;
+    color: var(--second-color);
+    line-height: 3.125rem;
+    font-family: var(--second-font);
+    margin: 1.25rem 0;
+}
+.paralex p{
+    font-size:1rem;
+    line-height: 2rem;
+    color: var(--third-color);
+    margin: 1.25rem 0;
 }

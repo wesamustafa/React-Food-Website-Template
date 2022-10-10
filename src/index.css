@@ -50,4 +50,13 @@ code {
   color: var(--primary-color) !important;
   transition: .2s ease-in-out;
 }
+.btn-link{
+  color: var(--primary-color) !important;
+  text-decoration: none !important;
+}
+.btn-link:hover{
+  color: var(--second-color) !important;
+  font-weight: bold;
+  transition: .2s ease-in-out;
+}
 
