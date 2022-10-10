@@ -4,7 +4,20 @@ import "./Home.css";
 import {Button} from 'react-bootstrap';
 import prideImg from '../../assets/pride.png';
 import ingredients from '../../assets/ingredients.png';
+import Data from "../../Data";
 const Home = ()=>{
+    const foodItems = Data.map((item)=>{
+       
+        return(
+            <div className="col-md-4">
+                    <img src={item.img} alt="foodimg"/>
+                    <h5>{item.title}</h5>
+                    <span className="time">{item.time}</span>
+                    <h3><span>{item.price - (item.price * item.discount / 100)}$</span> <span>{item.price}$</span></h3>
+                    <Button variant="primary">order now</Button>{' '}
+            </div>
+        )
+    })
     return(
         <Fragment>
         <Header/>
@@ -82,6 +95,21 @@ const Home = ()=>{
             </div>
         </section>
         {/* end section paralex */}
+        {/* start section foods */}
+        <section className="foods">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 col-md-12">
+                        <h2>Explore Our Foods</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet<br/> leo. Mauris feugiat erat tellus. Far far away, behind the word mountains, far from the countries Vokalia and<br/> Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                    </div>
+                </div>
+                <div className="row">
+                    {foodItems}
+                </div>
+            </div>
+        </section>
+        {/* end section foods */}
         
         </Fragment>
     )
