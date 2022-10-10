@@ -1,10 +1,13 @@
 import React, { Fragment } from "react";
 import Header from "./Header";
 import "./Home.css";
-import {Button} from 'react-bootstrap';
+import {Button, Carousel} from 'react-bootstrap';
 import prideImg from '../../assets/pride.png';
 import ingredients from '../../assets/ingredients.png';
 import Data from "../../Data";
+import testimonialsPic01 from "../../assets/testimonials/01.jpg";
+import testimonialsPic02 from "../../assets/testimonials/02.jpg";
+import testimonialsPic03 from "../../assets/testimonials/03.jpg";
 const Home = ()=>{
     const foodItems = Data.map((item)=>{
        
@@ -110,6 +113,59 @@ const Home = ()=>{
             </div>
         </section>
         {/* end section foods */}
+        {/* start section slider */}
+        <section className="testimonials">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-12 col-md-12">
+                    <h2>testimonials</h2>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-lg-12 col-md-12">
+                <Carousel>
+                    <Carousel.Item>
+                        <img
+                        src={testimonialsPic01}
+                        alt="First slide"
+                        />
+                        <Carousel.Caption>
+                        <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live."</p>
+                        <h6>Simab Dave - Web Designer</h6>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        src={testimonialsPic02}
+                        alt="Second slide"
+                        />
+
+                        <Carousel.Caption>
+                        <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live far from the countries Vokalia."</p>
+                        <h6>Johnthan Doe - UX Designer</h6>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                    <img
+                    src={testimonialsPic03}
+                    alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                    <p>
+                    "Far far away, behind the word mountains, far from the countries. Vokalia and Consonantia, there live the blind texts. "
+                    </p>
+                    <h6>Maccy Doe - Front End</h6>
+                    
+                    </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+                </div>
+            </div>
+        </div>
+       
+        </section>
+        {/* end section slider */}
         
         </Fragment>
     )
