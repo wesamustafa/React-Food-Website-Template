@@ -1,13 +1,52 @@
+/* main color */
+:root {
+  --primary-color: rgb(168, 45, 73);
+  --second-color:#43121d;
+  --primary-font:'Open Sans', sans-serif;;
+  --second-font: 'Merienda', cursive;
+}
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:var(--primary-font) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-transform: capitalize;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--primary-font) !important;
 }
+
+/* bootstrap "buttons" changes colors */
+.btn-primary, .btn-secondary{
+  letter-spacing: 0.081rem
+}
+
+.btn-primary{
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  border-width: 2px !important;
+  text-transform: capitalize;
+}
+.btn-primary:hover{
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  transition: .2s ease-in-out;
+  
+}
+.btn-secondary{
+  background-color: #fff !important;
+  border-color:#fff !important ;
+  color: var(--second-color) !important;
+  text-transform: capitalize;
+  border-width: 2px !important;
+}
+.btn-secondary:hover{
+  border-color:var(--primary-color) !important ;
+  color: var(--primary-color) !important;
+  transition: .2s ease-in-out;
+}
+
