@@ -165,7 +165,7 @@
     width: 100%;
     max-width: 100%;
     text-align: center;
-    padding:1.563rem
+    padding:1.563rem 0;
 }
 .testimonials h2{
     font-family: var(--second-font);

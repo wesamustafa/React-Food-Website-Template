@@ -1,0 +1,18 @@
+.footer{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    max-width: 100%;
+    padding:5.563rem 0;
+}
+.footer .row:first-child a{
+    color: #fff !important;
+    font-size: 1rem !important;
+}
+.footer .row:first-child a:hover{
+    text-decoration: underline;
+}
+.footer .row:last-of-type{
+    color: #fff;
+    font-size: 0.813rem;
+}

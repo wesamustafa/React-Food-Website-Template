@@ -9,9 +9,9 @@ import testimonialsPic01 from "../../assets/testimonials/01.jpg";
 import testimonialsPic02 from "../../assets/testimonials/02.jpg";
 import testimonialsPic03 from "../../assets/testimonials/03.jpg";
 import Subscribe from "../Subscribe/Subscribe";
+import Footer from "../Footer/Footer";
 const Home = ()=>{
     const foodItems = Data.map((item)=>{
-       
         return(
             <div className="col-md-4">
                     <img src={item.img} alt="foodimg"/>
@@ -172,6 +172,9 @@ const Home = ()=>{
         {/* start section subscribe */}
         <Subscribe/>
         {/* end section subscribe */}
+        {/* start section footer */}
+        <Footer/>
+        {/* end section footer */}
         </Fragment>
     )
 }
