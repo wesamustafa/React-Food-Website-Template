@@ -8,6 +8,7 @@ import Data from "../../Data";
 import testimonialsPic01 from "../../assets/testimonials/01.jpg";
 import testimonialsPic02 from "../../assets/testimonials/02.jpg";
 import testimonialsPic03 from "../../assets/testimonials/03.jpg";
+import Subscribe from "../Subscribe/Subscribe";
 const Home = ()=>{
     const foodItems = Data.map((item)=>{
        
@@ -121,6 +122,7 @@ const Home = ()=>{
                     <h2>testimonials</h2>
                 </div>
             </div>
+            {/* slider */}
             <div className="row">
                 <div className="col-lg-12 col-md-12">
                 <Carousel>
@@ -167,6 +169,9 @@ const Home = ()=>{
         </section>
         {/* end section slider */}
         
+        {/* start section subscribe */}
+        <Subscribe/>
+        {/* end section subscribe */}
         </Fragment>
     )
 }
