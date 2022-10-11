@@ -73,11 +73,21 @@
     line-height: 1.75rem;
     color: var(--third-color);
 }
+.ingredients ul{
+    padding-left: 0;
+}
 .ingredients ul li{
-    list-style-type: square;
+    list-style-type: none;
     color: var(--third-color);
     margin-top: 0.625rem;
+   
 }
+.ingredients ul li:before {
+    content: '✓';
+    padding-right:0.625rem;
+    color:var(--primary-color);
+    font-weight: bold;
+  }
 .ingredients img{
     max-width: 100%;
 }
@@ -110,7 +120,6 @@
 }
 /* foods section */
 .foods{
-    margin-top: 3.125rem;
     padding: 1.563rem 0;
     overflow: hidden;
     width: 100%;
