@@ -4,9 +4,10 @@ header{
     width: 100%;
     max-width: 100%;
     text-align: left;
-    height: auto;
+    height:auto;
     overflow: hidden;
-    padding: 1.563rem 0;
+    padding: 3.563rem 0;
+    margin-top: 80px;
 }
 header .row{
     margin: 3.75rem 0;

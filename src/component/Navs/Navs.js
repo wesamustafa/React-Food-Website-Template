@@ -3,7 +3,7 @@ import './Navs.css'
 import logo from '../../assets/logo.png';
 const Navs = ()=>{
     return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" fixed="top">
       <Container>
         <Navbar.Brand href="#home">
             <img src={logo} alt="logo"/>

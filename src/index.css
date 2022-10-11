@@ -4,7 +4,8 @@
   --second-color:#43121d;
   --third-color:#545454;
   --primary-font:'Open Sans', sans-serif;
-  --second-font: 'Merienda', cursive;
+  --second-font: 'Open Sans', sans-serif;
+  /* --second-font: 'Merienda', cursive; */
 }
 *{
   box-sizing: border-box;
