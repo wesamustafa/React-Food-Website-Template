@@ -14,11 +14,13 @@ const Home = ()=>{
     const foodItems = Data.map((item)=>{
         return(
             <div className="col-md-4">
+                    <div class="box">
                     <img src={item.img} alt="foodimg"/>
                     <h5>{item.title}</h5>
                     <span className="time">{item.time}</span>
                     <h3><span>{item.price - (item.price * item.discount / 100)}$</span> <span>{item.price}$</span></h3>
                     <Button variant="primary">order now</Button>{' '}
+                    </div>
             </div>
         )
     })

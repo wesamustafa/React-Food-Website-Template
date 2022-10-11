@@ -143,28 +143,31 @@
     color: var(--third-color);
     margin: 1.25rem 0;
 }
-.foods img{
+.foods .box{
+    margin-bottom: 0.625rem;
+}
+.foods .box img{
     max-width: 100%;
     border-radius: 0.625rem;
 }
-.foods h5{
+.foods .box h5{
     color: var(--second-color);
     font-size: 1.125rem;
     font-weight: bold;
     margin: 0.625rem 0 0 0;
 }
-.foods .time{
+.foods .box .time{
     margin-bottom:0.625rem;
     display: block;
 }
-.foods h3{
+.foods .box  h3{
     color: var(--primary-color);
 }
-.foods h3 span:last-child{
+.foods .box h3 span:last-child{
     text-decoration: line-through;
     color: var(--third-color);
 }
-.foods button{
+.foods .box button{
     margin-top: 1.125rem;
 }
 /* testimonials section */
